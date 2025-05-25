@@ -21,8 +21,10 @@ cypress-saucedemo-bdd/
 ├── cypress/
 │   ├── e2e/
 │   │   └── saucedemo/
-│   │       ├── login.feature          # BDD feature file
-│   │       └── login.js               # Step definitions
+│   │       ├── login.feature          # Login scenarios (positive & negative)
+│   │       ├── login.js               # Step definitions for login
+│   │       ├── filter.feature         # Product filter scenarios
+│   │       └── filter.js              # Step definitions for filter
 │   ├── support/
 │   │   └── e2e.js                     # Global support (can be empty)
 ├── cypress.config.js                 # Cypress configuration
@@ -77,21 +79,23 @@ npx cypress run --browser chrome
 
 ### Products:
 
-* ✅ Filter products by Name (A-Z, Z-A)
-* ✅ Filter products by Price (Low to High, High to Low)
+* ✅ Filter products by Name (A-Z)
+* ✅ Filter products by Name (Z-A)
+* ✅ Filter products by Price (Low to High)
+* ✅ Filter products by Price (High to Low)
 
 ### Cart:
 
-* ✅ Add product to cart
-* ✅ View shopping cart
-* ✅ Remove product from cart
+* ⬜ Add product to cart
+* ⬜ View shopping cart
+* ⬜ Remove product from cart
 
 ### Checkout:
 
-* ✅ Successful checkout
-* ❌ Checkout with missing First Name
-* ❌ Checkout with missing Last Name
-* ❌ Checkout with missing Zip Code
+* ⬜ Successful checkout
+* ⬜ Checkout with missing First Name
+* ⬜ Checkout with missing Last Name
+* ⬜ Checkout with missing Zip Code
 
 ---
 
@@ -122,3 +126,4 @@ This project uses:
 * `esbuild` for BDD support
 
 ```
+
