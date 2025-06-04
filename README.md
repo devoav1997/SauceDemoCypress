@@ -21,19 +21,21 @@ cypress-saucedemo-bdd/
 ├── cypress/
 │   ├── e2e/
 │   │   └── saucedemo/
-│   │       ├── login.feature          # Login scenarios (positive & negative)
-│   │       ├── login.js               # Step definitions for login
-│   │       ├── filter.feature         # Product filter scenarios
-│   │       ├── filter.js              # Step definitions for filter
-│   │       ├── add\_to\_cart.feature    # Add to cart scenarios
-│   │       ├── add\_to\_cart.js         # Step definitions for add to cart
-│   │       ├── view\_cart.feature      # View shopping cart scenarios (positive & negative)
-│   │       └── view\_cart.js           # Step definitions for view shopping cart
+│   │       ├── login.feature              # Login scenarios (positive & negative)
+│   │       ├── login.js                   # Step definitions for login
+│   │       ├── filter.feature             # Product filter scenarios
+│   │       ├── filter.js                  # Step definitions for filter
+│   │       ├── add\_to\_cart.feature        # Add to cart scenarios
+│   │       ├── add\_to\_cart.js             # Step definitions for add to cart
+│   │       ├── view\_cart.feature          # View shopping cart scenarios (positive & negative)
+│   │       ├── view\_cart.js               # Step definitions for view shopping cart
+│   │       ├── remove\_from\_cart.feature   # Remove product from cart scenarios
+│   │       └── remove\_from\_cart.js        # Step definitions for remove from cart
 │   ├── support/
-│   │   └── e2e.js                     # Global support (can be empty)
-├── cypress.config.js                 # Cypress configuration
-├── package.json                      # Dependencies and scripts
-├── README.md                         # Project documentation
+│   │   └── e2e.js                         # Global support (can be empty)
+├── cypress.config.js                      # Cypress configuration
+├── package.json                           # Dependencies and scripts
+├── README.md                              # Project documentation
 
 ````
 
@@ -92,7 +94,7 @@ npx cypress run --browser chrome
 
 * ✅ Add product to cart
 * ✅ View shopping cart (positive & negative)
-* ⬜ Remove product from cart
+* ✅ Remove product from cart
 
 ### Checkout:
 
@@ -128,3 +130,4 @@ This project uses:
 * [`@badeball/cypress-cucumber-preprocessor`](https://github.com/badeball/cypress-cucumber-preprocessor)
 * `Cypress` for automation engine
 * `esbuild` for BDD support
+
