@@ -30,7 +30,9 @@ cypress-saucedemo-bdd/
 │   │       ├── view\_cart.feature          # View shopping cart scenarios (positive & negative)
 │   │       ├── view\_cart.js               # Step definitions for view shopping cart
 │   │       ├── remove\_from\_cart.feature   # Remove product from cart scenarios
-│   │       └── remove\_from\_cart.js        # Step definitions for remove from cart
+│   │       ├── remove\_from\_cart.js        # Step definitions for remove from cart
+│   │       ├── checkout.feature           # Checkout scenarios (positive & negative)
+│   │       └── checkout.js                # Step definitions for checkout
 │   ├── support/
 │   │   └── e2e.js                         # Global support (can be empty)
 ├── cypress.config.js                      # Cypress configuration
@@ -98,10 +100,10 @@ npx cypress run --browser chrome
 
 ### Checkout:
 
-* ⬜ Successful checkout
-* ⬜ Checkout with missing First Name
-* ⬜ Checkout with missing Last Name
-* ⬜ Checkout with missing Zip Code
+* ✅ Successful checkout
+* ❌ Checkout with missing First Name
+* ❌ Checkout with missing Last Name
+* ❌ Checkout with missing Zip Code
 
 ---
 
@@ -130,4 +132,5 @@ This project uses:
 * [`@badeball/cypress-cucumber-preprocessor`](https://github.com/badeball/cypress-cucumber-preprocessor)
 * `Cypress` for automation engine
 * `esbuild` for BDD support
+
 
