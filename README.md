@@ -26,7 +26,9 @@ cypress-saucedemo-bdd/
 │   │       ├── filter.feature         # Product filter scenarios
 │   │       ├── filter.js              # Step definitions for filter
 │   │       ├── add\_to\_cart.feature    # Add to cart scenarios
-│   │       └── add\_to\_cart.js         # Step definitions for add to cart
+│   │       ├── add\_to\_cart.js         # Step definitions for add to cart
+│   │       ├── view\_cart.feature      # View shopping cart scenarios (positive & negative)
+│   │       └── view\_cart.js           # Step definitions for view shopping cart
 │   ├── support/
 │   │   └── e2e.js                     # Global support (can be empty)
 ├── cypress.config.js                 # Cypress configuration
@@ -89,7 +91,7 @@ npx cypress run --browser chrome
 ### Cart:
 
 * ✅ Add product to cart
-* ⬜ View shopping cart
+* ✅ View shopping cart (positive & negative)
 * ⬜ Remove product from cart
 
 ### Checkout:
@@ -126,4 +128,3 @@ This project uses:
 * [`@badeball/cypress-cucumber-preprocessor`](https://github.com/badeball/cypress-cucumber-preprocessor)
 * `Cypress` for automation engine
 * `esbuild` for BDD support
-
